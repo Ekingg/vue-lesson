@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
@@ -11,7 +10,7 @@
     <h1>{{ greet('morning') }}</h1>
     <a v-bind:href="website">My website is here</a>
     <input type="text" v-bind:value="job">
-    <p v-html="websiteTag"> my site </p>
+    <p v-html="websiteTag"></p>
     <p>Job: {{ job }}</p>
 </div>
 <panda></panda>

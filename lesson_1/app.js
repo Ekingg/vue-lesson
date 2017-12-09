@@ -4,7 +4,7 @@ new Vue({
         name: 'Alexey',
         job: 'Developer',
         website: 'https://vk.com/im?sel=63014461',
-        websiteTag: '<a href="https://vk.com/im?sel=63014461"> my site</a>'
+        websiteTag: '<a href="https://vk.com/im?sel=63014461">my site</a>'
     },
     methods: {
         greet: function (time) {
