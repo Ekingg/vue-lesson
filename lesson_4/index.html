@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+<div id="app">
+    <div>
+        <h1>Keyboard events</h1>
+        <label for="nameInput">Name</label>
+        <input v-model="name" type="text" id="nameInput">
+        <span>{{ name }}</span>
+    </div>
+    <div>
+        <label for="ageInput">Age:</label>
+        <input v-model="age" type="text" id="ageInput">
+        <span>{{ age }}</span>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
