@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a972c4a7-92d0-48f9-95ba-6f96e26d3080" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/lesson_4/app.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/lesson_4/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lesson_5/app.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lesson_5/index.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,10 +21,20 @@
       <split-first>
         <leaf>
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/lesson_5/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="300">
+                  <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lesson_4/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="333">
-                  <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+                <state relative-caret-position="170">
+                  <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="27" />
                   <folding />
                 </state>
               </provider>
@@ -35,10 +45,10 @@
       <split-second>
         <leaf>
           <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/lesson_4/app.js">
+            <entry file="file://$PROJECT_DIR$/lesson_5/app.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="80">
-                  <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+                <state relative-caret-position="-132">
+                  <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
                   <folding />
                 </state>
               </provider>
@@ -73,6 +83,8 @@
         <option value="$PROJECT_DIR$/lesson_3/app.js" />
         <option value="$PROJECT_DIR$/lesson_4/app.js" />
         <option value="$PROJECT_DIR$/lesson_4/index.html" />
+        <option value="$PROJECT_DIR$/lesson_5/app.js" />
+        <option value="$PROJECT_DIR$/lesson_5/index.html" />
       </list>
     </option>
   </component>
@@ -131,7 +143,7 @@
             <path>
               <item name="VueLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="VueLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson_4" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson_5" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -153,6 +165,7 @@
       <recent name="$PROJECT_DIR$/lesson_1" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lesson_5" />
       <recent name="$PROJECT_DIR$/lesson_4" />
       <recent name="$PROJECT_DIR$/lesson_3" />
     </key>
@@ -193,7 +206,7 @@
       <workItem from="1512803062680" duration="931000" />
       <workItem from="1512804009980" duration="577000" />
       <workItem from="1512818487867" duration="4518000" />
-      <workItem from="1512827010922" duration="2386000" />
+      <workItem from="1512827010922" duration="3352000" />
     </task>
     <task id="LOCAL-00001" summary="-">
       <created>1512803466764</created>
@@ -209,11 +222,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512827905055</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="lesson_4">
+      <created>1512841957217</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1512841957217</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8412000" />
+    <option name="totallyTimeSpent" value="9378000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -225,10 +245,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="873" height="900" extended-state="6" />
+    <frame x="0" y="0" width="751" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22680412" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26364848" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -283,7 +303,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="-" />
     <MESSAGE value="lesson_3" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson_3" />
+    <MESSAGE value="lesson_4" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson_4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -452,8 +473,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lesson_4/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        <state relative-caret-position="170">
+          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson_5/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-132">
+          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson_5/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding />
         </state>
       </provider>
