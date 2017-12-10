@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+<div id="app">
+    <h1>Looping through list</h1>
+    <ul>
+        <li v-for="character in characters">{{ character }}</li>
+    </ul>
+    <!---->
+    <hr>
+    <ul>
+        <p v-for="(ninja, index) in ninjas">
+            {{ index }}. {{ ninja.name }} - {{ ninja.age }}
+        </p>
+    </ul>
+    <hr>
+    <!--Instead div you can use template tag
+    for avoid wrapping any block in div block(few html code)-->
+    <template v-for="(ninja, index) in ninjas">
+        <h3> {{ index }}. {{ ninja.name }}</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nemo quasi reprehenderit similique tempore!
+            A, consequuntur culpa earum in neque officia optio quia tempora voluptate voluptatem! Doloremque nam
+            sapiente ut.
+        </p>
+    </template>
+    <!---->
+    <template v-for="ninja in ninjas">
+        <div v-for="(key,val) in ninja">
+            <p>{{key}} {{val}}</p>
+        </div>
+    </template>
+
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
