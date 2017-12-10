@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+<div id="app">
+    <h1>Conditionals</h1>
+    <button @click="error=!error">Toggle error</button>
+    <button @click="success=!success">Toggle success</button>
+    <!--Example 1-->
+    <!--Element fully removed from DOM-->
+    <!--<p v-if="error">Error</p>-->
+    <!--<p v-else-if="success">Whoooo, success!</p>-->
+    <!--Example 2-->
+    <!--Element bring style = display:none-->
+    <p v-show="error">Error</p>
+    <p v-show="success">Whoooo, success!</p>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
