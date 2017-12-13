@@ -1,10 +1,10 @@
 <template>
   <div>
-    <app-header></app-header>
+    <app-header v-bind:title="title"></app-header>
     <app-ninjas v-bind:ninjas="ninjas"></app-ninjas>
     <!--                 |        |       -->
     <!-- (data from Ninjas.vue) (this data)  -->
-    <app-footer></app-footer>
+    <app-footer v-bind:title="title"></app-footer>
   </div>
 </template>
 
@@ -25,6 +25,9 @@
     },
     data() {
       return {
+        //  Object and Array it is a reference types.
+        //  If child update root reference type data
+        //  they will be updated everywhere
         ninjas: [
           {name: 'Ryu', speciality: 'Vue Components', show: false},
           {name: 'Crystal', speciality: 'HTML Wizardry', show: false},
@@ -32,7 +35,10 @@
           {name: 'Tango', speciality: 'Conditionals', show: false},
           {name: 'Kami', speciality: 'Webpack', show: false},
           {name: 'Yoshi', speciality: 'Data Diggin', show: false}
-        ]
+        ],
+          // If data have primitive type: String, Number, Boolean
+          // data will be updated locally in each component
+          title: 'Vue Ninjas sa'
       }
     }
   }
