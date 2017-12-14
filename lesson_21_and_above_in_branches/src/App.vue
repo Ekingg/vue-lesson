@@ -1,3 +1,4 @@
+<!-- Root Component -->
 <template>
   <div>
     <app-header v-bind:title="title"></app-header>

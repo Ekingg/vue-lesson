@@ -6,6 +6,8 @@
 
 
 <script>
+  import { bus } from '../main.js'
+
     export default {
         props: {
             title: {
@@ -17,7 +19,11 @@
         },
         methods: {
             changeTitle: function(){
-                this.title = 'Some new title'
+                // emitting events ( излучаем событие ) to bus element
+                // and then, listen there event with name titleChanged in Footer
+                bus.$emit('titleChanged', 'This is a new title send to Footer');
+                this.title = 'And together change Header Title'
+              //            (event)         (data sending with event)
             }
         }
     }
