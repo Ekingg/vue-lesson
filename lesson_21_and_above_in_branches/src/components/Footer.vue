@@ -17,7 +17,6 @@
         copyright: 'Panda copyrights'
       }
     },
-    // lifecycle hook
     created() {
       // listen event from Footer component through bus object
       bus.$on('titleChanged', (data) => { this.title = data })
