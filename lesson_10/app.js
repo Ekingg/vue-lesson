@@ -18,8 +18,8 @@ Vue.component('greeting', {
 });
 
 var one = new Vue({
-    el:'#app-one'
+    el:'#app-formOne'
 });
 var two = new Vue({
-    el:'#app-two'
+    el:'#app-formTwo'
 });

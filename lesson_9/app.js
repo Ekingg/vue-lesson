@@ -1,7 +1,7 @@
 var one = new Vue({
-    el: '#app-one',
+    el: '#app-formOne',
     data: {
-        title: 'Vue app one'
+        title: 'Vue app formOne'
     },
     methods: {},
     computed: {
@@ -11,13 +11,13 @@ var one = new Vue({
     }
 });
 var two = new Vue({
-    el: '#app-two',
+    el: '#app-formTwo',
     data: {
-        title: 'Vue app two'
+        title: 'Vue app formTwo'
     },
     methods: {
         changeTitle: function(){
-            //interaction with first Vue instance saved in variable with name "one"
+            //interaction with first Vue instance saved in variable with name "formOne"
             one.title = 'Changed title';
         }
     },

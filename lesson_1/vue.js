@@ -262,7 +262,7 @@ function genStaticKeys (modules) {
 }
 
 /**
- * Check if two values are loosely equal - that is,
+ * Check if formTwo values are loosely equal - that is,
  * if they are plain objects, do they have the same shape?
  */
 function looseEqual (a, b) {
@@ -688,7 +688,7 @@ Dep.prototype.notify = function notify () {
 };
 
 // the current target watcher being evaluated.
-// this is globally unique because there could be only one
+// this is globally unique because there could be only formOne
 // watcher being evaluated at any time.
 Dep.target = null;
 var targetStack = [];
@@ -931,7 +931,7 @@ function copyAugment (target, src, keys) {
 /**
  * Attempt to create an observer instance for a value,
  * returns the new observer if successfully observed,
- * or the existing observer if the value already has one.
+ * or the existing observer if the value already has formOne.
  */
 function observe (value, asRootData) {
   if (!isObject(value) || value instanceof VNode) {
@@ -1111,7 +1111,7 @@ var strats = config.optionMergeStrategies;
 }
 
 /**
- * Helper that recursively merges two data objects together.
+ * Helper that recursively merges formTwo data objects together.
  */
 function mergeData (to, from) {
   if (!from) { return to }
@@ -1246,7 +1246,7 @@ ASSET_TYPES.forEach(function (type) {
 /**
  * Watchers.
  *
- * Watchers hashes should not overwrite one
+ * Watchers hashes should not overwrite formOne
  * another, so we merge them as arrays.
  */
 strats.watch = function (
@@ -1416,7 +1416,7 @@ function assertObjectType (name, value, vm) {
 }
 
 /**
- * Merge two option objects into a new one.
+ * Merge formTwo option objects into a new formOne.
  * Core utility used in both instantiation and inheritance.
  */
 function mergeOptions (
@@ -2141,7 +2141,7 @@ function checkProp (
 //
 // For plain HTML markup, normalization can be completely skipped because the
 // generated render function is guaranteed to return Array<VNode>. There are
-// two cases where extra normalization is needed:
+// formTwo cases where extra normalization is needed:
 
 // 1. When the children contains components - because a functional component
 // may return an Array instead of a single root. In this case, just a simple
@@ -6192,7 +6192,7 @@ function updateAttrs (oldVnode, vnode) {
 function setAttr (el, key, value) {
   if (isBooleanAttr(key)) {
     // set attribute for blank value
-    // e.g. <option disabled>Select one</option>
+    // e.g. <option disabled>Select formOne</option>
     if (isFalsyAttrValue(value)) {
       el.removeAttribute(key);
     } else {
@@ -7100,7 +7100,7 @@ var setProp = function (el, name, val) {
     if (Array.isArray(val)) {
       // Support values array created by autoprefixer, e.g.
       // {display: ["-webkit-box", "-ms-flexbox", "flex"]}
-      // Set them one by one, and the browser will only set those it can recognize
+      // Set them formOne by formOne, and the browser will only set those it can recognize
       for (var i = 0, len = val.length; i < len; i++) {
         el.style[normalizedName] = val[i];
       }
@@ -7810,7 +7810,7 @@ var directive = {
       var curOptions = el._vOptions = [].map.call(el.options, getValue);
       if (curOptions.some(function (o, i) { return !looseEqual(o, prevOptions[i]); })) {
         // trigger change event if
-        // no matching option found for at least one value
+        // no matching option found for at least formOne value
         var needReset = el.multiple
           ? binding.value.some(function (v) { return hasNoMatchingOption(v, curOptions); })
           : binding.value !== binding.oldValue && hasNoMatchingOption(binding.value, curOptions);
@@ -8122,7 +8122,7 @@ var Transition = {
       // #6687 component root is a comment node
       !(oldChild.componentInstance && oldChild.componentInstance._vnode.isComment)
     ) {
-      // replace old child transition data with fresh one
+      // replace old child transition data with fresh formOne
       // important for dynamic transitions!
       var oldData = oldChild.data.transition = extend({}, data);
       // handle transition mode
@@ -8157,7 +8157,7 @@ var Transition = {
 
 // Because the vdom's children update algorithm is "unstable" - i.e.
 // it doesn't guarantee the relative positioning of removed elements,
-// we force transition-group to update its children into two passes:
+// we force transition-group to update its children into formTwo passes:
 // in the first pass, we remove all nodes that need to be removed,
 // triggering their leaving transition; in the second pass, we insert/move
 // into the final desired state. This way in the second pass removed
@@ -8936,7 +8936,7 @@ function parse (
     shouldKeepComment: options.comments,
     start: function start (tag, attrs, unary) {
       // check namespace.
-      // inherit parent ns if there is one
+      // inherit parent ns if there is formOne
       var ns = (currentParent && currentParent.ns) || platformGetTagNamespace(tag);
 
       // handle IE svg bug
@@ -9015,7 +9015,7 @@ function parse (
           });
         } else {
           warnOnce(
-            "Component template should contain exactly one root element. " +
+            "Component template should contain exactly formOne root element. " +
             "If you are using v-if on multiple elements, " +
             "use v-else-if to chain them instead."
           );
@@ -10147,7 +10147,7 @@ function genInlineTemplate (el, state) {
   if ("development" !== 'production' && (
     el.children.length !== 1 || ast.type !== 1
   )) {
-    state.warn('Inline-template components must have exactly one child element.');
+    state.warn('Inline-template components must have exactly formOne child element.');
   }
   if (ast.type === 1) {
     var inlineRenderFns = generate(ast, state.options);
