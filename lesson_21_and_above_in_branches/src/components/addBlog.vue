@@ -4,19 +4,23 @@
     <form>
       <label>Blog Title:</label>
       <!--Use lazy for change model if input unfocused-->
-      <input type="text" v-model.lazy="blog.title" required />
+      <label>
+        <input type="text" v-model.lazy="blog.title" required/>
+      </label>
       <label>Blog Content:</label>
-      <textarea v-model.lazy.trim="blog.content"></textarea>
+      <label>
+        <textarea v-model.lazy.trim="blog.content"></textarea>
+      </label>
       <div id="checkboxes">
         <p>Blog Categories:</p>
-        <label>Ninjas</label>
-        <input type="checkbox" value="ninjas" v-model="blog.categories" />
-        <label>Wizards</label>
-        <input type="checkbox" value="wizards" v-model="blog.categories" />
-        <label>Mario</label>
-        <input type="checkbox" value="mario" v-model="blog.categories" />
-        <label>Cheese</label>
-        <input type="checkbox" value="cheese" v-model="blog.categories" />
+        <label for="1_chbox">Ninjas</label>
+        <input id="1_chbox" type="checkbox" value="ninjas" v-model="blog.categories"/>
+        <label for="2_chbox">Wizards</label>
+        <input id="2_chbox" type="checkbox" value="wizards" v-model="blog.categories"/>
+        <label for="3_chbox">Mario</label>
+        <input id="3_chbox" type="checkbox" value="mario" v-model="blog.categories"/>
+        <label for="4_chbox">Cheese</label>
+        <input id="4_chbox" type="checkbox" value="cheese" v-model="blog.categories"/>
       </div>
       <label>Author:</label>
       <select v-model="blog.author">
@@ -41,7 +45,7 @@
   // Imports
 
   export default {
-    data () {
+    data() {
       return {
         blog: {
           title: '',
@@ -52,42 +56,47 @@
         authors: ['The Net Ninja', 'The Angular Avenger', 'The Vue Vindicator']
       }
     },
-    methods: {
-
-    }
+    methods: {}
   }
 </script>
 
 <style>
-  #add-blog *{
+  #add-blog * {
     box-sizing: border-box;
   }
-  #add-blog{
+
+  #add-blog {
     margin: 20px auto;
     max-width: 500px;
   }
-  label{
+
+  label {
     display: block;
     margin: 20px 0 10px;
   }
-  input[type="text"], textarea{
+
+  input[type="text"], textarea {
     display: block;
     width: 100%;
     padding: 8px;
   }
-  #preview{
+
+  #preview {
     padding: 10px 20px;
     border: 1px dotted #ccc;
     margin: 30px 0;
   }
-  h3{
+
+  h3 {
     margin-top: 10px;
   }
-  #checkboxes input{
+
+  #checkboxes input {
     display: inline-block;
     margin-right: 10px;
   }
-  #checkboxes label{
+
+  #checkboxes label {
     display: inline-block;
     margin-top: 0;
   }
