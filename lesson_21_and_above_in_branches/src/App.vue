@@ -1,16 +1,13 @@
 <template>
   <div>
-    <ul v-theme="'wide'">
-      <li v-rainbow v-for="planet in planets">{{ planet | spaced-str }}</li>
-    </ul>
-    <ul v-theme:bordered="'narrow'">
-      <li v-rainbow v-for="planet in planets">{{ planet | snippet }}
+    <h1>All about planets</h1>
+    <input type="text" v-model="searchPlanet" placeholder="search planet">
+    <ul>
+      <li v-rainbow v-for="planet in filteredPlanets">
+        {{ planet.name }}
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, aut cumque debitis dolorem ea hic
-          inventore laudantium natus neque, nulla praesentium quasi qui rem reprehenderit voluptas. Animi autem
-          doloribus natus.
-
-        </p>
+        {{ planet.description }}
+        <hr>
       </li>
     </ul>
   </div>
@@ -21,15 +18,34 @@
     components: {},
     data() {
       return {
-        planets: ['Earth', 'Mars', 'Venus', 'Jupiter']
+        planets: [
+          {name: 'Earth', description: 'Wonderful planet with people and other lives'},
+          {name: 'Mars', description: 'Cold, red'},
+          {name: 'Venus', description: 'Warm, blue'},
+          {name: 'Jupiter', description: 'Big... and something else'}
+        ],
+        searchPlanet: ''
       }
     },
-    methods: {}
+    methods: {},
+    computed: {
+      filteredPlanets: function () {
+        return this.planets.filter((planet) => {
+          return planet.description.toLowerCase().match(this.searchPlanet.toLowerCase()) ||
+            planet.name.toLowerCase().match(this.searchPlanet.toLowerCase());
+        })
+      }
+    }
   }
 </script>
 
 <style>
   ul {
     background-color: lightgrey;
+    width: 400px;
+  }
+
+  input {
+    width: 435px;
   }
 </style>
