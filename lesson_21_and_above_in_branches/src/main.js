@@ -1,6 +1,20 @@
 import Vue from 'vue'
 import App from './App.vue'
 
+
+Vue.filter('spaced-str', function (value) {
+  let spacedString = '';
+  for(let i = 0; i < value.length; i++){
+    spacedString += value.charAt(i) + ' ';
+  }
+  return spacedString;
+});
+
+
+Vue.filter('snippet', function(value){
+  return value.slice(0, 1)
+});
+
 Vue.directive('rainbow', {
   inserted: function (el) {
     el.style.color = '#' + Math.random().toString().slice(2, 8);
