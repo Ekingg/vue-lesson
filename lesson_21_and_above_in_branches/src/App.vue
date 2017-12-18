@@ -4,7 +4,7 @@
     <input type="text" v-model="searchPlanet" placeholder="search planet">
     <ul>
       <li v-rainbow v-for="planet in filteredPlanets">
-        {{ planet.name }}
+        {{ planet.name | toUppercase }}
         <br>
         {{ planet.description }}
         <hr>
@@ -34,6 +34,18 @@
           return planet.description.toLowerCase().match(this.searchPlanet.toLowerCase()) ||
             planet.name.toLowerCase().match(this.searchPlanet.toLowerCase());
         })
+      }
+    },
+    filters: {
+      toUppercase(value) {
+        return value.toUpperCase();
+      }
+    },
+    directives: {
+      'rainbow': {
+        bind(el, binding, vnode) {
+          el.style.color = '#' + Math.random().toString().slice(2, 8);
+        }
       }
     }
   }
