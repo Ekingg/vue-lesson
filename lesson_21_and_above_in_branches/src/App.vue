@@ -1,27 +1,28 @@
 <template>
   <div>
-    <add-blog></add-blog>
+    <ul v-theme="'wide'">
+      <li v-rainbow v-for="planet in planets">{{ planet }}</li>
+    </ul>
+    <ul v-theme:bordered="'narrow'">
+      <li v-rainbow v-for="planet in planets">{{ planet }}</li>
+    </ul>
   </div>
 </template>
 
 <script>
-  // Imports
-  import addBlog from './components/addBlog.vue';
-
   export default {
-    components: {
-      'add-blog': addBlog
-    },
+    components: {},
     data() {
-      return {}
+      return {
+        planets: ['Earth', 'Mars', 'Venus', 'Jupiter' ]
+      }
     },
     methods: {}
   }
 </script>
 
 <style>
-  body {
-    margin: 0;
-    font-family: 'Nunito SemiBold';
+  ul {
+    background-color: lightgrey;
   }
 </style>

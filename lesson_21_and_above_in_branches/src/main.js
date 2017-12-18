@@ -1,16 +1,25 @@
 import Vue from 'vue'
 import App from './App.vue'
 
-//    For Vue Http requests
-//     npm install vue-resource --save
-import VueResource from 'vue-resource'
+Vue.directive('rainbow', {
+  inserted: function (el) {
+    el.style.color = '#' + Math.random().toString().slice(2, 8);
+  }
+});
 
-Vue.use(VueResource);
 
-// create element for event exchanges between components
-//(directly, no through root component)
-export const bus = new Vue();
-
+Vue.directive('theme', {
+  bind(el, binding, vnode){
+    if( binding.value === 'wide' ){
+      el.style.maxWidth = '800px';
+    } else if( binding.value === 'narrow' ){
+      el.style.maxWidth = '400px';
+    }
+    if (binding.arg === 'bordered'){
+      el.style.border = '1px solid black';
+    }
+  }
+});
 new Vue({
   el: '#app',
   render: h => h(App)
