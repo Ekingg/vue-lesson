@@ -10,12 +10,17 @@
         <hr>
       </li>
     </ul>
+    <all-stars></all-stars>
   </div>
 </template>
 
 <script>
+  import planets from './components/anotherPlanets'
+  import searchMixins from './mixins/serchMixins'
   export default {
-    components: {},
+    components: {
+      'all-stars': planets
+    },
     data() {
       return {
         planets: [
@@ -28,14 +33,7 @@
       }
     },
     methods: {},
-    computed: {
-      filteredPlanets: function () {
-        return this.planets.filter((planet) => {
-          return planet.description.toLowerCase().match(this.searchPlanet.toLowerCase()) ||
-            planet.name.toLowerCase().match(this.searchPlanet.toLowerCase());
-        })
-      }
-    },
+    computed: {},
     filters: {
       toUppercase(value) {
         return value.toUpperCase();
@@ -47,7 +45,8 @@
           el.style.color = '#' + Math.random().toString().slice(2, 8);
         }
       }
-    }
+    },
+    mixins:[searchMixins]
   }
 </script>
 
