@@ -1,14 +1,20 @@
 import Vue from 'vue'
 import App from './App.vue'
+import VueRouter from 'vue-router'
+import Routes from './routes.js'
 
-/*Vue.directive('rainbow', {
-  inserted: function (el) {
-    el.style.color = '#' + Math.random().toString().slice(2, 8);
-  }
-});*/
+Vue.use(VueRouter);
 
+// const router = new VueRouter({
+//   routes: Routes
+// });
 
 new Vue({
   el: '#app',
-  render: h => h(App)
+  render: h => h(App),
+  router: new VueRouter({
+    routes: Routes,
+    // mode: 'hash'
+    mode: 'history'
+  })
 });
